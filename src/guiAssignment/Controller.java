@@ -99,6 +99,7 @@ public class Controller {
     }
 
     private void constructSeatsArrayList(){
+
         //initialize the ArrayList instance to store seats
         seats = new ArrayList<>();
 
@@ -118,6 +119,9 @@ public class Controller {
     private void constructChoiceBox(){
 
         colorChoice.setItems(FXCollections.observableArrayList(Arrays.asList(COLORS)));
+
+        //set the default value for the ChoiceBox
+        colorChoice.setValue(COLORS[0]);
     }
 
     //a method to handle the ActionEvent set on the placeButton component
@@ -188,12 +192,12 @@ public class Controller {
     //a method to check whether a student name is valid or not
     private boolean validateStudentName(String studentName){
 
-        boolean nameAvailable = true;
+        boolean availability = true;
 
         //if the name is empty, return false
         if(studentName.trim().isEmpty()){
 
-            nameAvailable = false;
+            availability = false;
 
         }else{
 
@@ -202,12 +206,12 @@ public class Controller {
 
                 //if the same name exists, set the availability false
                 if(students.get(i).getName().equals(studentName)){
-                    nameAvailable = false;
+                    availability = false;
                 }
             }
         }
 
-        return nameAvailable;
+        return availability;
     }
 
     //a method to designate a seat for a student

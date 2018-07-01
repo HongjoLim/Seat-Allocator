@@ -65,7 +65,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <children>
-                  <Button fx:id="placeButton" alignment="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#onButtonAction" text="PLACE" textFill="#3b0e4a">
+                  <Button fx:id="placeButton" alignment="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#onButtonAction" text="Add Student" textFill="#3b0e4a">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
@@ -150,7 +150,7 @@
    <top>
       <Label alignment="CENTER" prefHeight="50.0" prefWidth="195.0" text="TEACHER" textAlignment="CENTER" textFill="#5e45a4" BorderPane.alignment="CENTER">
          <font>
-            <Font name="Consolas Italic" size="36.0" />
+            <Font name="Consolas" size="36.0" />
          </font>
       </Label>
    </top>
