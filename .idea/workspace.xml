@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8195966e-cb80-4a00-90a0-3b61af402476" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/guiAssignment/guiAssignment/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/guiAssignment/guiAssignment/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guiAssignment/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guiAssignment/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guiAssignment/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guiAssignment/model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guiAssignment/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guiAssignment/sample.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guiAssignment/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="248" column="89" selection-start-line="248" selection-start-column="89" selection-end-line="248" selection-end-column="89" />
+            <state relative-caret-position="146">
+              <caret line="260" lean-forward="true" selection-start-line="260" selection-end-line="260" />
               <folding>
                 <element signature="e#2178#2601#0" />
                 <element signature="e#2607#2982#0" />
@@ -66,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/guiAssignment/sample.fxml">
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
           <provider editor-type-id="text-editor">
@@ -85,9 +82,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/guiAssignment/Main.java" />
-        <option value="$PROJECT_DIR$/src/guiAssignment/sample.fxml" />
         <option value="$PROJECT_DIR$/src/guiAssignment/model/Student.java" />
         <option value="$PROJECT_DIR$/src/guiAssignment/Controller.java" />
+        <option value="$PROJECT_DIR$/src/guiAssignment/sample.fxml" />
       </list>
     </option>
   </component>
@@ -314,14 +311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guiAssignment/sample.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="73" column="137" selection-start-line="73" selection-start-column="137" selection-end-line="73" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guiAssignment/model/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -331,12 +320,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guiAssignment/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="248" column="89" selection-start-line="248" selection-start-column="89" selection-end-line="248" selection-end-column="89" />
+        <state relative-caret-position="146">
+          <caret line="260" lean-forward="true" selection-start-line="260" selection-end-line="260" />
           <folding>
             <element signature="e#2178#2601#0" />
             <element signature="e#2607#2982#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guiAssignment/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="73" column="137" selection-start-line="73" selection-start-column="137" selection-end-line="73" selection-end-column="137" />
         </state>
       </provider>
     </entry>
