@@ -1,12 +1,12 @@
 package guiAssignment;
 
 import guiAssignment.model.Student;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
@@ -36,7 +36,7 @@ public class Controller {
     private TextField studentNameText;
 
     @FXML
-    private ChoiceBox<String> colorChoice;
+    private ColorPicker colorChoice;
 
     @FXML
     private Text name1, name2, name3, name4, name5, name6, name7, name8, name9;
@@ -55,9 +55,6 @@ public class Controller {
     private List<Rectangle> seats;
 
     private List<Student> students = new ArrayList<>();
-
-    //An array to store string values of of colors
-    private final String[] COLORS = {"White", "Black", "Red", "Green", "Blue", "Yellow", "Cyan", "Gray", "Orange"};
 
     //constants to distinguish whether the process is done without any error or not
     private final int CASE_ERROR = 1;
@@ -115,13 +112,15 @@ public class Controller {
 
     }
 
-
     private void constructChoiceBox(){
 
+        /*
         colorChoice.setItems(FXCollections.observableArrayList(Arrays.asList(COLORS)));
 
         //set the default value for the ChoiceBox
         colorChoice.setValue(COLORS[0]);
+        */
+
     }
 
     //a method to handle the ActionEvent set on the placeButton component
@@ -132,6 +131,7 @@ public class Controller {
         if(messageText.isVisible()){
             messageText.setVisible(false);
         }
+
 
         //check if all the 9 seats are taken
         if(students.size()>=9){
@@ -144,8 +144,12 @@ public class Controller {
         //get student's name from the TextField
         String studentName = studentNameText.getText();
 
+        /*
         //get the color of the seat from the Choice box
         String seatColor = colorChoice.getValue();
+        */
+
+        Color seatColor = colorChoice.getValue();
 
         //check whether the student's name is valid or not
         if(!validateStudentName(studentName)){
@@ -215,7 +219,7 @@ public class Controller {
     }
 
     //a method to designate a seat for a student
-    private void designateSeat(String studentName, String seatColor){
+    private void designateSeat(String studentName, Color seatColor){
 
         Random random = new Random();
 
@@ -236,13 +240,13 @@ public class Controller {
         students.add(student);
 
         //fill the rectangle with the chosen color
-        seats.get(student.getSeatIndex()).setFill(Paint.valueOf(student.getSeatColor()));
+        seats.get(student.getSeatIndex()).setFill(student.getSeatColor());
 
         //set the student's name for the text that has the same index as that of the seat
         names.get(student.getSeatIndex()).setVisible(true);
         names.get(student.getSeatIndex()).setText(student.getName());
 
-        messageText.setFill(Paint.valueOf("Blue"));
+        //set the message using the custom method, set the color blue(using the constant CASE_SUCCESS)
         setMessage(String.format("%s\'s seat is successfully assigned!", student.getName()), CASE_SUCCESS);
 
     }
@@ -265,7 +269,7 @@ public class Controller {
     }
 
     //the method to iterate ArrayList of students to find whether the seat color is already taken or not
-    private boolean checkColorAvailability(String color){
+    private boolean checkColorAvailability(Color color){
 
         boolean availability= true;
 

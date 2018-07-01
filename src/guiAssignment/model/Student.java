@@ -1,5 +1,7 @@
 package guiAssignment.model;
 
+import javafx.scene.paint.Color;
+
     /**
      * NAME: HONGJO LIM
      * DATE: July 1, 2018
@@ -16,10 +18,10 @@ public class Student {
     private int seatIndex;
 
     //a variable to store the string value for the color of the seat
-    private String seatColor;
+    private Color seatColor;
 
     //the constructor that 3 arguments for name, seatNumber, and color
-    public Student(String name, int seatIndex, String seatColor){
+    public Student(String name, int seatIndex, Color seatColor){
 
         this.name = name;
         this.seatIndex = seatIndex;
@@ -35,7 +37,7 @@ public class Student {
             return seatIndex;
         }
 
-        public String getSeatColor() {
+        public Color getSeatColor() {
             return seatColor;
         }
     }
