@@ -1,4 +1,4 @@
-package guiAssignment.model;
+package guiAssignment_200385753.model;
 
 import javafx.scene.paint.Color;
 

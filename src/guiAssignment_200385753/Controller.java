@@ -1,6 +1,6 @@
-package guiAssignment;
+package guiAssignment_200385753;
 
-import guiAssignment.model.Student;
+import guiAssignment_200385753.model.Student;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -28,7 +28,7 @@ public class Controller {
      *      2) 9 Rectangles indicating seats
      *      3) 1 Text to show error message
      *      4) 1 TextField to input a student name
-     *      5) 1 ChoiceBox to choose the color of the seat
+     *      5) 1 ColorPicker to choose the color of the seat
      *      6) 1 Button to place students
      */
 
@@ -72,9 +72,6 @@ public class Controller {
         //call the method to construct the ArrayList for seats
         constructSeatsArrayList();
 
-        //call the method to set options for the color on the ChoiceBox
-        constructChoiceBox();
-
     }
 
     private void constructNamesArrayList(){
@@ -112,17 +109,6 @@ public class Controller {
 
     }
 
-    private void constructChoiceBox(){
-
-        /*
-        colorChoice.setItems(FXCollections.observableArrayList(Arrays.asList(COLORS)));
-
-        //set the default value for the ChoiceBox
-        colorChoice.setValue(COLORS[0]);
-        */
-
-    }
-
     //a method to handle the ActionEvent set on the placeButton component
     @FXML
     private void onButtonAction(ActionEvent event){
@@ -144,11 +130,7 @@ public class Controller {
         //get student's name from the TextField
         String studentName = studentNameText.getText();
 
-        /*
-        //get the color of the seat from the Choice box
-        String seatColor = colorChoice.getValue();
-        */
-
+        //get the color from the ColorPicker component
         Color seatColor = colorChoice.getValue();
 
         //check whether the student's name is valid or not
@@ -282,5 +264,5 @@ public class Controller {
         return availability;
 
     }
-
+    
 }
